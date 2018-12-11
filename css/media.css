@@ -2,34 +2,36 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-		.show-menu {
-			display: flex;
-		}
 
 		.header-logo {
 			right: 700px;
 		}
 
+		.head-navbar {
+			width: 100%;
+		}
+
 		.menu-list {
+			display: none;
+		}
+
+		.button {
+			display: flex;
+			position: absolute;
+			top: -15px;
+    		right: -10px;
+		}
+
+		.o-wrap ul {
+			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin: 0 auto;
-			width: auto;
-			height: auto;
-			text-align: left;
+    		justify-content: center;
+    		align-items: center;
+   			margin: 0 auto;
+    		width: auto;
+    		height: auto;
+    		text-align: left;
 		}
-
-		.vul-menu {
-			max-height: 0px;
-			overflow: hidden;
-		}
-
-		.vul-menu.expand {
-			max-height: 100%;
-		}
-
-		
 
 }
 

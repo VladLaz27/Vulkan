@@ -78,13 +78,17 @@ ul {
 	width: 100%;
 }
 
-.vul-menu ul {
+.menu-list {
 	display: flex;
 	text-align: center;
 }
 
 .vul-menu ul li {
 	padding-left: 30px;
+}
+
+.o-wrap ul li {
+	padding-bottom: 30px;
 }
 
 .vul-menu ul li:last-child {
@@ -111,7 +115,8 @@ ul {
 	background: url(../img/bonus.png) 50% no-repeat;
 }
 
-.vul-menu ul li a {
+.vul-menu ul li a,
+.o-wrap ul li a {
 	font-family: inherit;
 	color: #dceafd;
 	font-size: 17px;
@@ -119,39 +124,101 @@ ul {
 	text-decoration: none;
 }
 
-.vul-menu ul li a:hover {
+.o-wrap ul li a {
+	color: #fff;
+}
+
+.vul-menu ul li a:hover,
+.o-wrap ul li a:hover {
 	color: #51709b;
 }
 
-.show-menu {
+.button {
 	display: none;
 	float: right;
-	width: 40px;
+	width: 22px;
+	height: 22px;
+	margin-top: 10px;
+	background-color: red;
 	border: none;
 	cursor: pointer;
+	background-color: transparent;
+	z-index: 999;
 }
 
-.show-menu div {
+.btn-open {
 	position: relative;
-	top: 5px;
 	width: 100%;
-	height: 3px;
+	height: 4px;
 	background-color: #fff;
+	top: 9px;
 }
 
-.show-menu div:after,
-.show-menu div:before {
+.btn-open:before,
+.btn-open:after {
 	content: "";
 	position: absolute;
 	width: 100%;
-	height: 3px;
+	height: 4px;
 	top: 16px;
 	background-color: #fff;
 }
 
-.show-menu div:before {
-	top: -18px;
+.btn-open:after {
+	top: 9px;
 }
+
+.btn-open:before {
+	top: -9px;
+}
+
+.btn-close {
+	position: relative;
+	top: -50px;
+    left: 100px;
+	width: 100%;
+	height: 100%;
+}
+
+.btn-close:after,
+.btn-close:before {
+	content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.btn-close:before {
+	transform: rotate(45deg);
+}
+
+.btn-close:after {
+	transform: rotate(-45deg);
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 15, 48, 0.8);
+    opacity: 0.8;
+    overflow: auto;
+    z-index: 99;
+}
+
+.o-wrap {
+	text-align: center;
+	max-width: 100%;
+	margin: 50px auto;
+}
+
+
+
 
 .sb-top {
 	text-align: center;
