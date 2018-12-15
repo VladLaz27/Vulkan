@@ -7,10 +7,6 @@
 			right: 700px;
 		}
 
-		.head-navbar {
-			width: 100%;
-		}
-
 		.menu-list {
 			display: none;
 		}
@@ -51,7 +47,7 @@
 @media only screen and (max-width : 768px) {
 
 		.header-logo {
-			left: -100px;
+			left: -50px;
 	}
 
 		.sb-top img {
@@ -64,7 +60,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+		.header-logo {
+			left: 50px;
+	}
 }
 
 /* Custom, iPhone Retina */

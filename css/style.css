@@ -126,6 +126,7 @@ ul {
 
 .o-wrap ul li a {
 	color: #fff;
+	font-weight: 500;
 }
 
 .vul-menu ul li a:hover,
@@ -202,11 +203,11 @@ ul {
 .overlay {
 	display: none;
 	position: fixed;
+	left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(1, 15, 48, 0.8);
-    opacity: 0.8;
+    background-color: rgba(1, 15, 48, 0.9);
     overflow: auto;
     z-index: 99;
 }
@@ -222,22 +223,30 @@ ul {
 
 .sb-top {
 	text-align: center;
+	padding-bottom: 10px;
+}
+
+.sb-description {
+	color: #8990a0;
+	font-size: 9px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
 	padding-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slider-block {
-	padding-top: 30px;
+	padding-top: 10px;
+}
+
+.sb-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+.swiper-wrapper {
+	display: flex;
 }
