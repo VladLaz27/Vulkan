@@ -13,9 +13,25 @@ $('.overlay').on('click', function(){
 
 var swiper = new Swiper('.swiper-container', {
       slidesPerView: 6,
-      centeredSlides: true,
+      breakpoints: {
+        1199: {
+          slidesPerView: 5
+        },
+        991: {
+          slidesPerView: 4
+        },
+        767: {
+          slidesPerView: 3
+        },
+        575: {
+          slidesPerView: 2
+        },
+        400: {
+          slidesPerView: 1
+        }
+      },
       autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
       },
     });
