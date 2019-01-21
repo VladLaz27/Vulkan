@@ -29,6 +29,10 @@
     		text-align: left;
 		}
 
+		.btn-see-more a:after {
+			right: 200px;
+		}
+
 }
 
 
@@ -40,6 +44,10 @@
 
 		.sb-top img {
 			width: 100%;
+	}
+
+		.vul-footer-right {
+			padding-bottom: 20px;
 	}
 }
 
@@ -55,18 +63,64 @@
 			height: 78px;
 	}
 
+	.site-pagination li a span {
+		display: none;
+	}
+
+	.site-pagination li a {
+		width: 30px;
+		border-radius: 3px;
+		padding: 15px 10px;
+		font-size: 16px;
+	}
+
+	.btn-see-more a:after {
+			right: 150px;
+	}
+
+	.vul-footer-menu ul {
+		flex-direction: column;
+	}
+
+	.vul-footer-menu ul li {
+		margin-bottom: 10px;
+	}
+
+	.vul-prava span {
+		font-size: 18px;
+		font-weight: 500;
+		padding-left: 5px;
+	}
+
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 		.header-logo {
-			left: 50px;
+			left: -70px;
 	}
+
+	.sb-top {
+		margin-top: 20px;
+	}
+
+	.sb-top img {
+			width: 309px;
+			height: 58px;
+	}
+
+	.btn-see-more a:after {
+			right: 50px;
+		}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+	.btn-see-more a:after {
+			right: 30px;
+		}
 
 }
 
@@ -95,5 +149,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+}
+
+@media only screen and (min-width : 1460px) {
+
+	.vul-bg-wrapp {
+		max-width: 1290px;
+	}
 
 }

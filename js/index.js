@@ -12,6 +12,7 @@ $('.overlay').on('click', function(){
 
 
 var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
       slidesPerView: 6,
       breakpoints: {
         1199: {
